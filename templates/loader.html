@@ -1,0 +1,32 @@
+<div class="-preload">
+</div>
+
+<style type="text/css">
+	.-preload {
+		position: fixed;
+		top: 50%; left: 50%;
+		border: 20px solid teal;
+		width: 70px; height: 70px;
+		margin-top: -35px; margin-left: -35px;
+		border-radius: 20px;
+		-webkit-animation: preload 1s infinite;
+		-o-animation: preload 1s infinite;
+		animation: preload 1s infinite;
+	}
+	@keyframes preload {
+		25% {
+			border-top: 15px solid red;
+		}
+		50% {
+			border-right: 15px solid orange;
+			transform: rotate(720deg);
+		}
+		75% {
+			border-bottom: 15px solid purple;
+		}
+		100% {
+			border-left: 15px solid indigo;
+			transform: rotate(0deg);
+		}
+	}
+</style>

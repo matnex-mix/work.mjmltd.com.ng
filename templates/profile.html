@@ -1,0 +1,31 @@
+<div class="p-4">
+	<div class="waves-effect d-block text-center">
+		<img src="favicon.jpg" class="circle" width="120" height="120" onclick="$('#image').click();" />
+		<input type="file" name="image" id="image" class="d-none">
+	</div>
+	<div class="input-field">
+		<input type="text" name="dname" placeholder="Display Name">
+		<span class="helper-text">can contain alphabets, numbers and symbols( _ - . @ )</span>
+	</div>
+	<div class="mt-4">
+		<button class="btn tn-lg tn-large w-100 waves-effect red rounded-0 z-depth-3">
+			SAVE
+		</button>
+	</div><br/>
+	<h3 class="mt-3">Change Password</h3>
+	<div class="input-field">
+		<input type="password" name="oldpass" required placeholder="Old Password"/>
+	</div>
+	<div class="input-field">
+		<input type="password" name="newpass" required placeholder="New Password"/>
+	</div>
+	<div class="input-field">
+		<input type="password" name="confirmpass" required placeholder="Confirm Password"/>
+		<span class="helper-text">your password must be between 6 & 12 letters</span>
+	</div>
+	<div class="mt-4">
+		<button class="btn tn-lg tn-large w-100 waves-effect red rounded-0 z-depth-3">
+			SAVE
+		</button>
+	</div>
+</div>

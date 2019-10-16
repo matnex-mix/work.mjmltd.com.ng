@@ -1,0 +1,64 @@
+<div class="fixed-top d-flex align-items-center p-2" style="background: rgba(255,255,255,0.3);">
+	<button class="btn z-depth-0 text-dark waves-effect" onclick="history.back();" style="background: transparent !important">
+		<i class="fa fa-arrow-left"></i>
+	</button>
+	<div class="ml-3" style="flex-grow: 1">
+		<h5 class="m-0">File View</h5>
+	</div>
+	<button class="btn z-depth-0 text-dark ml-auto waves-effect" style="background: transparent !important">
+		<i class="fa fa-download"></i>
+	</button>
+	<button onclick="deleteFile();" class="btn z-depth-0 text-dark waves-effect" style="background: transparent !important">
+		<i class="fa fa-trash"></i>
+	</button>
+</div>
+
+<div class="">
+	<div class="card-image-top -cimg border-bottom" style="background-image: url('favicon.jpg'); height: 15rem;"></div>
+	<div class="p-4">
+		<div class="mb-3">
+			<input onclick="this.select()" value="http://work.mjmltd.com.ng/files/8sdf456dm" readonly />
+		</div>
+		<div class="mb-3">
+			<strong>Name:</strong>
+			<span>mjm-budget-201908.xlsx</span>
+		</div>
+		<div class="mb-3">
+			<strong>Date:</strong>
+			<span>10-12-2019 11:56AM</span>
+		</div>
+		<div class="mb-3">
+			<strong>Type:</strong>
+			<span>Excel Spreadsheet</span>
+		</div>
+		<div class="mb-5">
+			<strong>Uploader:</strong>
+			<span>Mubadex</span>
+		</div>
+		<div class="">
+			<div class="input-field">
+				<input type="password" name="filepass" placeholder="Password">
+				<label>Lock File</label>
+				<span class="helper-text">minimum of 6, maximum of 12 letters</span>
+			</div>
+			<button class="mt-2 btn red w-100 rounded-0 z-depth-3 waves-effect">
+				SAVE
+			</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	defer(function(){
+		GPageSet( 'file-view', 'NO_HEADER' );
+	});
+
+	function deleteFile() {
+		if( confirm('Confirm Delete') ) {
+			M.toast({ html: '<font color="lime">Deleting File</font><a href="javascript:void(0)" onclick="clearTimeout($timeout); this.parentElement.parentElement.remove();" class="white-text">UNDO</a>', panning: true, displayLength: 3000 });
+			$timeout = setTimeout(function(){
+				alert("File Deleted");
+			}, 5000);
+		}
+	}
+</script>

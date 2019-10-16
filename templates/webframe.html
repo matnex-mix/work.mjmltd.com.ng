@@ -1,0 +1,40 @@
+<div class="d-flex flex-column mh-100">
+	<div class="border-bottom">
+		<div class="d-flex p-2 align-items-center justify-content-between">
+			<div>
+				<a target="mainframe" href="javascript:(function (){ history.back(); })()" class="btn waves-effect z-depth-0 text-dark" style="background: transparent;">
+					<i class="fa fa-arrow-left"></i>
+				</a>
+			</div>
+			<div class="px-2 -ntruncate waves-effect" style="flex-grow: 1">
+				<h5 class="m-0"><b>FUNAAB Admission List</b></h5>
+				<small class="">http://admission.unaab.edu.ng/news/102344/admission-list.php</small>
+			</div>
+			<div>
+				<button onclick="history.back();" class="btn waves-effect z-depth-0 text-dark" style="background: transparent;">
+					<i class="fa fa-times"></i>
+				</button>
+			</div>
+		</div>
+		<div class="d-none progress rounded-0 m-0" style="height: 3px">
+			<div class="indeterminate"></div>
+		</div>
+	</div>
+	<iframe name="mainframe" src="http://localhost/brandin" frameborder="0" class="w-100" style="height: 40rem" sandbox="allow-scripts allow-popups allow-pointer-lock allow-forms allow-same-origin" srcdoc="<a href='http://localhost' target='_top'></a>"></iframe>
+	</div>
+</div>
+
+<script type="text/javascript">
+	defer(function(){
+		GPageSet( 'webframe', 'NO_HEADER' );
+		GPageSet( 'webframe', 'NO_FOOTER' );
+	});
+</script>
+<style type="text/css">
+	.-ntruncate {
+		white-space: nowrap;
+		overflow-x: hidden;
+		max-width: 100%;
+		text-overflow: ellipsis;
+	}
+</style>

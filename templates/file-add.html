@@ -1,0 +1,12 @@
+<div class="p-4">
+	<div class="input-field">
+		<div class="input-field">
+			<input id="fileuploadhelp" type="text" readonly name="upload" placeholder="Select Your File" onclick="$('#fileupload').click();">
+			<span class="helper-text">select no more than 5 files</span>
+		</div>
+		<input type="file" name="upload" placeholder="Select Your File" multipl required class="d-none" maxlength="5" id="fileupload" onchange="$('#fileuploadhelp').val(this.value);">
+		<button class="btn red waves-effect z-depth-3 w-100 rounded-0 mt-3">
+			UPLOAD
+		</button>
+	</div>
+</div>

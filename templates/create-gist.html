@@ -1,0 +1,32 @@
+<div class="p-4">
+	<h3>Gist Creation</h3>
+
+	<form class="text-right">
+		<div class="input-field">
+			<textarea class="materialize-textarea" style="min-height: 150px">Your Gist Message</textarea>
+		</div>
+
+		<div class="input-field">
+			<select class="select-option" multiple>
+				<option>classic-mjm.docx</option>
+				<option>main-budget.xlsx</option>
+			</select>
+		</div>
+
+		<br/>
+		<button class="btn w-100 z-depth-3 red waves-effect white-text rounded-0">
+			POST
+		</button>
+	</form>
+	
+	<br/><br/>
+	<h5>
+		<strong>Use BBCodes</strong>
+	</h5>
+</div>
+
+<script type="text/javascript">
+	defer(function(){
+		M.FormSelect.init( $('.select-option'), {} );
+	});
+</script>

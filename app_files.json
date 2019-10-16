@@ -1,0 +1,19 @@
+{
+    "file-includes.html": ["inc", "left", ""],
+    "loader.html": ["loader", "", "page-loader"],
+    "index.html": ["main", "left", ""],
+    "header.html": ["header", "", "page-header"],
+    "gists.html": ["gists", "left", ""],
+    "create-gist.html": ["create-gist", "left", ""],
+    "files.html": ["files", "left", ""],
+    "file-view.html": ["file-view", "up", ""],
+    "file-add.html": ["file-add", "up", ""],
+    "notes.html": ["notes", "left", ""],
+    "add-note.html": ["add-note", "left", ""],
+    "usage.html": ["usage", "left", ""],
+    "profile.html": ["profile", "left", ""],
+    "user-profile.html": ["user-profile", "up", ""],
+    "webframe.html": ["webframe", "up", ""],
+    "budget.html": ["budget", "up", ""],
+    "footer.html": ["footer", "", "page-footer"]
+}
